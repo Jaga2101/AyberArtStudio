@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayber Art Studio</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="shortcut icon" type="image" href="Get.jpg">
+</head>
+<body>
+    <header>
+        <div class="title">Ayber Art Studio</div>
+        <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Art Work</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="person.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="title"> Ayber Art Studio</div>
+        <button class="btn" onclick="openForm()">==</button>
+
+    </section>
+    <!-- Popup Form Start-->
+    
+    <div class="form-popup" id="myForm">
+        <form action="#" class="contain">
+            <button class="btn-cancel" onclick="closeForm()">X</button>
+            <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Art Work</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="person.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            </ul>
+        </form>      
+    </div>
+<!-- Popup Form End-->
+<!-- Body Start -->
+<div class="art">
+    <br><br><br><br>
+    <center>
+    <img src="1.jpeg " alt="order" width="200" height="250">
+    <img src="2.jpg " alt="order" width="200" height="250">
+    <img src="5.jpeg " alt="order" width="200" height="250">
+    <img src="13.jpg " alt="order" width="200" height="250"><br><br>
+    <img src="7.jpeg " alt="order" width="200" height="250">
+    <img src="14.jpg " alt="order" width="200" height="250">
+    <img src="15.jpg " alt="order" width="200" height="250">
+    <img src="17.jpg " alt="order" width="200" height="250"><br><br>
+</center>
+</div>
+    
+		
+<!-- Body Start -->
+ <!--Script Code Start -->
+ <script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+<!--Script Code End -->
+</body>
+</html>

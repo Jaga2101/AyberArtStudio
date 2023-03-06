@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ayber Art Studio</title>
+	<link rel="stylesheet" href="login.css">
+	<link rel="shortcut icon" type="image" href="Get.jpg">
+</head>
+<body>
+
+	<center>
+    <form action="" class="conson">
+		<h2>Ayber Art Studio</h2>
+		<h3>Sign Up</h3>
+		<input type="email" placeholder="Email Address" required><br>
+		<input type="password" placeholder="Password" name="pass1" required><br>
+	    <input type="password" placeholder="ReEnter Password" name="pass2" required><br>
+		<button type="submit" class="btn1" onclick="check(this.form)">Sign up</button><br>
+		<a href="login.html" class="a2">Login Here</a> 
+	</form>
+</center>
+<script>
+	function check(form){
+		if(form.pass1.value == form.pass2.value)
+		{
+			alert('Sign Up Sucessfully')
+		}
+		else
+		{
+			alert("check The Password Right Now?")
+		}
+	}
+
+
+</script>
+
+</body>
+</html>

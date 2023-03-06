@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayber Art Studio</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="shortcut icon" type="image" href="Get.jpg">
+</head>
+<body>
+    <header>
+        <div class="title">Ayber Art Studio</div>
+        <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Art Work</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="person.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="title"> Ayber Art Studio</div>
+        <button class="btn" onclick="openForm()">==</button>
+
+    </section>
+    <!-- Popup Form Start-->
+    
+    <div class="form-popup" id="myForm">
+        <form action="#" class="contain">
+            <button class="btn-cancel" onclick="closeForm()">X</button>
+            <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Art Work</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="person.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            </ul>
+        </form>      
+    </div>
+<!-- Popup Form End-->
+<!-- Body Start -->
+<center>
+<form  class="order">
+    <p>Place Your Order</p>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <input type="number" name="number" id="number" placeholder="Mobile Number" required>
+        <input type="file" name="file" id="file" placeholder="Image" required>
+        <input type="text" name="text" id="text" placeholder="Drawing Type" required>
+        <input type="size" name="size" id="size" placeholder="Frame Size" required>
+        <input type="address" name="address" placeholder="Address" id="address" required>
+    <div class="order-link">
+        <input type="checkbox" name="text" id="text" required>
+        <label for="text">Accept the Terms and Conditions</label>  
+    </div>
+        <button type="submit" class="box" onclick="fillForm()">Order</button>
+
+</form>
+</center>
+<!-- Body Start -->
+ <!--Script Code Start -->
+ <script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+    function fillForm() {
+       alert('Thank You');
+       alert('Order Sucessfully Placed ')
+       alert('We will keep you posted about the status of the order via SMS.We will send you the exact payment amount when the order is ready for delivery ')
+    }
+
+</script>
+<!--Script Code End -->
+</body>
+</html>

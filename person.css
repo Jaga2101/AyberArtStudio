@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: black;
+    /*box-sizing: border-box;*/
+}
+section{
+    display: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 20px 40px;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 1000;
+}
+.title{
+    margin-left: 12px;
+    color: white;
+    font-size: 25px;
+   font-family: 'Courier New', Courier, monospace;
+   font-style: italic;
+   font-weight: bold
+}
+.navigation{
+    margin-right: 20px;
+    padding: 13px 23px 13px 23px;
+    display: flex;
+}
+.navigation li{
+   
+    list-style: none;
+}
+.navigation li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 13px;
+}
+.navigation li a:hover{
+    width: 80px;
+    border-radius: 20px;
+    color: white;
+    padding: 13px 13px 13px 13px;
+    border-radius: 15px;
+    background:linear-gradient(60deg,#ec0ab0,#0895dc);
+}
+.form-popup{
+    display: none;
+    position: relative;
+    justify-content: center;
+    margin-top: 60px;
+}
+.contain{
+    width: 250px;
+    height: 900px;
+    background: black;
+}
+.btn-cancel{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-left: 200px;
+}
+.nav{
+    background: transparent;
+    margin-right: 20px;
+    width: 250px;
+    height: 100%;
+    display: block;
+    
+}
+.nav li{
+    background: transparent;
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nav li a{
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 15px;
+}
+.nav li a:hover{
+    width: 150px;
+    border-radius: 20px;
+    background:linear-gradient(60deg,#ec0ab0,#0895dc);
+    color: white;
+}
+
+/* Body*/
+.card{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    background: linear-gradient(60deg,#ec0ab0,#0895dc);
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.card img{
+    width: 200px;
+    height: 260px;
+    border-radius: 20px 50px 40px 70px;
+}
+.card  .content h2{
+    background: linear-gradient(60deg,#ec0ab0,#0895dc) ;
+    color: white;
+    text-align: center;
+}
+.card  .content h2 span{
+    background: linear-gradient(60deg,#ec0ab0,#0895dc) ;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* Body*/
+
+
+/* Mobile */
+@media screen and (max-width:485px) {
+ body{
+    background: white;
+ }
+ header{
+    display:none;
+ }
+ section{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.title{
+   background: transparent;
+    margin-left: 5px;
+    font-size: 20px;
+   font-family: 'Courier New', Courier, monospace;
+   font-style: italic;
+   font-weight: bold;
+}
+.btn{
+    width: 35px;
+    height: 25px;
+    background:linear-gradient(60deg,#ec0ab0,#0895dc);
+    border: none;
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
+}

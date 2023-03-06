@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayber Art Studio</title>
+    <link rel="stylesheet" href="person.css">
+    <link rel="shortcut icon" type="image" href="Get.jpg">
+</head>
+<body>
+    <header>
+        <div class="title">Ayber Art Studio</div>
+        <ul class="navigation">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Art Work</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="person.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="title"> Ayber Art Studio</div>
+        <button class="btn" onclick="openForm()">==</button>
+
+    </section>
+    <!-- Popup Form Start-->
+    
+    <div class="form-popup" id="myForm">
+        <form action="#" class="contain">
+            <button class="btn-cancel" onclick="closeForm()">X</button>
+            <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Art Work</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="person.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            </ul>
+        </form>      
+    </div>
+<!-- Popup Form End-->
+<!-- Body Start -->
+<center>
+ <div class="card">
+        <img src="men.jpg" alt="img">
+    <div class="content">
+            <h2>Jaka<br><span>Founder and CEO</span></h2>
+    </div>
+</div>
+<div class="card">
+        <img src="male.jpg" alt="img">
+    <div class="content">
+            <h2>Raja Varma<br><span>Senior painter</span></h2>
+        </div>
+    </div>
+
+<div class="card">
+        <img src="female.jpg" alt="img">
+    <div class="content">
+            <h2>Amirita <br><span>Senior Artist</span></h2>
+    </div>
+</div>
+</center>		
+<!-- Body Start -->
+ <!--Script Code Start -->
+ <script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+<!--Script Code End -->
+</body>
+</html>
